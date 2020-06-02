@@ -15,7 +15,7 @@ def loadWords():
     return wordlist
 
 def start(update, context):
-    response_message = "Olá, eu sou a Dona Guiomar, um bot que modera o uso de palavras racistas, homofóbicas e que atrapalhem o bom andamento das conversas!"
+    response_message = "Olá, eu sou o bot do Estamos #Juntos, um bot que modera o uso de palavras racistas, homofóbicas e que atrapalhem o bom andamento das conversas!"
     update.message.reply_text(response_message)
 
 def listWords(update, context):
