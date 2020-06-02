@@ -23,8 +23,8 @@ def listWords(update, context):
     context.bot.send_message(update.message.from_user.id, response_message)
 
 def badwords(update, context):
-    response_message = "Essa mensagem não acrescenta em nada e por isso foi removida." 
-    context.bot.send_message(update.message.from_user.id, response_message)
+    #response_message = "Essa mensagem não acrescenta em nada e por isso foi removida." 
+    #context.bot.send_message(update.message.from_user.id, response_message)
     update.message.delete()
 
 
