@@ -41,7 +41,7 @@ def main():
     dispatcher.add_handler(CommandHandler('start', start))
     dispatcher.add_handler(CommandHandler('listWords', listWords))
     
-    regex_words = r"\b(?:" + "|".join(WORDLIST) + r")\b"
+    regex_words = r"(?i)\b(?:" + "|".join(WORDLIST) + r")\b"
     dispatcher.add_handler(MessageHandler(Filters.regex(regex_words), badwords))
 
     dispatcher.add_error_handler(error)
